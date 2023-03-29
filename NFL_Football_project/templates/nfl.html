@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <body bgcolor="lightpink">
+            <h2>NFL 2010 to 2022 Stats To Predict 2023 Winner</h2>
+            
+            <form action="/find" , method="post" >
+
+                <label>Team:</label> <select name="html_Team">
+                    <option value="New England Patriots">New England Patriots</option>
+                    <option value="New York Jets">New York Jets</option>
+                    <option value="San Francisco 49ers">San Francisco 49ers</option>
+                    <option value="Seattle Seahawks">Seattle Seahawks</option>
+                    <option value="Carolina Panthers">Carolina Panthers</option>
+                    <option value="Tampa Bay Buccaneers ">Tampa Bay Buccaneers </option>
+                    <option value="New Orleans Saints">New Orleans Saints</option>
+                    <option value="Atlanta Falcons">Atlanta Falcons</option>
+                    </select>
+                    <br><br>
+
+                <lable>WinLoss_perc:</lable> <input type="number" step="any" name="html_wlp">
+                <label>PD:</label> <input type="number" step="any" name="html_pd"><br><br>
+                <lable>Year:</lable> <input type="number" step="any" name="html_y">
+                <lable>FGM:</lable> <input type="number" step="any" name="html_fgm"><br><br>
+                <label>FG_perc:</label> <input type="number" step="any" name="html_fp">
+                <lable>RedZone_perc:</lable> <input type="number" step="any" name="html_rzp"><br><br> 
+                <label>playoff_win_perc:</label> <input type="number" step="any" name="html_pwp">
+                <lable>Score_perc:</lable> <input type="number" step="any" name="html_sp"><br><br> 
+                <label>Turnover_perc:</label> <input type="number" step="any" name="html_tp">
+                <lable>RushYperG:</lable> <input type="number" step="any" name="html_rp"><br><br>
+
+                <label>PassYperG:</label> <input type="number" step="any" name="html_pyp">
+                <lable>PointperG:</lable> <input type="number" step="any" name="html_ptg"><br><br>
+                <lable>possperG:</lable> <input type="number" step="any" name="html_ppg">
+                <label>YallowedperG:</label> <input type="number" step="any" name="html_ypg"><br><br>
+                <lable>PointallowedperG:</lable> <input type="number" step="any" name="html_pag"> 
+                <label>perc_punt_20:</label> <input type="number" step="any" name="html_p20"><br><br>
+
+                <input type="submit" value="PREDICT">
+
+                <h3>{{match_output}}</h3>
+
+                
+        
+            </form>
+        </body>
+
+    </head>
+</html>
